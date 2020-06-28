@@ -1,0 +1,218 @@
+@import './variables.scss';
+
+
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: $primary-color;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header{
+  overflow: hidden;
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+#links {
+   float: left;
+   padding: 1em;
+   text-decoration: none;
+   font-size: 1.2vw;
+   color: $font-black-color;
+}
+
+.header-right a:not(:last-child){
+    border-right: 1px solid black;
+}
+
+
+.header #links:hover {
+    color: $font-hover;
+ }
+
+.header-right{
+    float: right;
+    margin-top: 1.7em;
+    line-height: 3px;
+    font-weight: 500;
+}
+
+.sea-logo{
+    height: 50%;
+    width: 50%;
+    text-align: left;
+}
+
+.welcome {
+    min-height: 100%;
+    min-width: 1024px;
+      
+    width: 100%;
+    height: 165vh;
+    background-repeat: no-repeat;
+  }  
+
+.backgroundApply{
+    min-height: 100%;
+    min-width: 1024px;
+      
+    width: 100%;
+    height: 200vh;
+    background-repeat: no-repeat;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5em;
+}
+
+.first-column {
+    flex: 50%;
+    justify-content: space-around;
+}
+  
+.second-column {
+    flex: 50%;
+}
+
+.column-1 {
+    flex: 25%;
+    justify-content: space-around;
+}
+
+.column-2 {
+    flex: 25%;
+    justify-content: space-around;
+}
+
+.column-3 {
+    flex: 25%;
+    justify-content: space-around;
+}
+  
+.column-4 {
+    flex: 25%;
+}
+
+#welcome-title{
+    font-size: 4vw;
+    color: $font-white-color;
+    text-align: left;
+}
+
+#welcome-subtitle{
+    color: $font-white-color;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.welcome .graduate-logo{
+    width: 100%;
+    height: 100%;
+}
+
+// .welcome .welcome-img {
+//     position: absolute;
+//     min-height: 100%;
+//     min-width: 1024px;
+      
+//     width: 100%;
+//     height: auto;
+
+//     z-index: 0;
+//   }  
+
+.scolarship-wrapper{
+    padding: 1em;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+.scolarship-wrapper h2{
+    font-size: 4vw;
+}
+
+.scolarship-wrapper .subtitle{
+        // margin-right: 5em;
+        // margin-left: 5em;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.card-wrapper{
+    background-color: $secondary-color;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 2em;
+    padding: 2em;
+    height: 100vh;
+}
+
+.card-wrapper li{
+    font-size: 1vw;
+    text-align: left;
+}
+
+img{
+    -moz-transform:scale(0.75);
+    -webkit-transform:scale(0.75);
+    transform:scale(0.75);
+}
+
+.partner-wrapper{
+    background-color: $secondary-color ;
+    height: 100%;
+}
+
+.timeline-wrapper h2{
+    font-size: 1vw;
+}
+
+.faq-style{
+    padding: 0em 20em 0em 20em;
+    text-align: left;
+}
+
+@media screen and (max-width: 870px) {
+    .header #links {
+       float: none;
+       display: block;
+       text-align: left;
+    }
+    .header-right {
+       float: none;
+    }
+
+    .welcome{
+        min-height: 100%;
+        min-width: 100%;
+        
+        width: 10vh;
+        height: 180vh;
+      }
+    
+      .welcome .row{
+        display: flex;
+        flex-wrap: wrap;
+        color: $font-white-color;
+        // padding-top: 10em;
+    }
+
+    .welcome .first-column {
+        flex: 100%;
+        font-size: 10px;
+    }
+
+    .welcome .graduate-logo{
+        width: 300px;
+        height: 300px;
+    }
+
+    .welcome .second-column {
+        flex: 100%;
+    }
+ }
