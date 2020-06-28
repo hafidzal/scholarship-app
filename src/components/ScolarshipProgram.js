@@ -29,7 +29,7 @@ class ScolarshipProgram extends  Component  {
 
 
         return(
-            <div className="scolarship-wrapper">
+            <div className="scolarship-wrapper" id="program">
                 <h2>Undergraduate Scholarship Program</h2>
                <div className="subtitle">{isLoading === false? contents.program_content : 'loading...'}</div>
                 <div className="row-flex">

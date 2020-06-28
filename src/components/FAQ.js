@@ -29,7 +29,7 @@ class FAQ extends  Component  {
 
 
         return(
-            <div className="scolarship-wrapper">
+            <div className="scolarship-wrapper" id="FAQ">
                 <h2>FAQ</h2>
                 <div className="faq-style">
                     <div>{isLoading === false? <div dangerouslySetInnerHTML={{ __html: contents.faq_content }} /> : 'loading...'}</div>  

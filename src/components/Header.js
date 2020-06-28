@@ -8,10 +8,10 @@ const Header = () =>{
                 <img src={seaLogo} className="sea-logo" alt="sea-logo" />
             </a>
             <div className="header-right">
-                <a className="active" href="#home" id="links">Home</a>
-                <a href="#contact" id="links">Program</a>
-                <a href="#about" id="links">Apply Here</a>
-                <a href="#about" id="links">FAQ</a>
+                <a className="active" href="/" id="links">Home</a>
+                <a href="#program" id="links">Program</a>
+                <a href="#apply" id="links">Apply Here</a>
+                <a href="#FAQ" id="links">FAQ</a>
             </div>
         </div>
     );
